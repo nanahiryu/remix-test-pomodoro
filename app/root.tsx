@@ -1,5 +1,6 @@
 import type { LinksFunction } from "@remix-run/cloudflare";
-import { cssBundleHref } from "@remix-run/css-bundle";
+
+import stylesheet from "~/tailwind.css";
 import {
   Links,
   LiveReload,
@@ -9,10 +10,12 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
+// export const links: LinksFunction = () => [
+//   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
+// ];
 export const links: LinksFunction = () => [
-  ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
+  { rel: "stylesheet", href: stylesheet },
 ];
-
 export default function App() {
   return (
     <html lang="en">
