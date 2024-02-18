@@ -1,9 +1,17 @@
-node_modules
+# Created by https://www.toptal.com/developers/gitignore/api/remix,remix+cloudflarepages
+# Edit at https://www.toptal.com/developers/gitignore?templates=remix,remix+cloudflarepages
 
+### Remix ###
+node_modules
 /.cache
+/build
+/public/build
+.env
+
+### Remix+CloudflarePages ###
 /functions/\[\[path\]\].js
 /functions/\[\[path\]\].js.map
-/functions/metafile.*
-/functions/version.txt
-/public/build
-.dev.vars
+
+/.wrangler
+
+# End of https://www.toptal.com/developers/gitignore/api/remix,remix+cloudflarepages
